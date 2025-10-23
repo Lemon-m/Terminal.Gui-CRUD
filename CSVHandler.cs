@@ -2,7 +2,7 @@ namespace CRUD
 {
     class CSVHandler
     {
-        static void ReadCSV(List<Product> products)
+        static public void ReadCSV(List<Product> products)
         {
             if (File.Exists("produkty.csv"))
             {
@@ -35,7 +35,7 @@ namespace CRUD
             }
         }
     
-        static void ExportCSV(List<Product> products)
+        static public void ExportCSV(List<Product> products)
         {
             File.WriteAllText("produkty.csv", "ID;Nazwa;Cena;Kategoria;Data utworzenia" + Environment.NewLine);
             using (StreamWriter writer = File.AppendText("produkty.csv"))

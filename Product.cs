@@ -4,8 +4,6 @@ namespace CRUD
     {
         static public int productCount;
 
-        static public int yOffset = 1;
-
         public int ID { get; set; }
 
         public string Name { get; set; }
@@ -19,7 +17,6 @@ namespace CRUD
         public Product()
         {
             productCount++;
-            yOffset += 14;
             ID = productCount;
             Name = "";
             Category = "";
@@ -29,7 +26,6 @@ namespace CRUD
         public Product(string NameInp, double priceInp, string CatInp, string DateInp)
         {
             productCount++;
-            yOffset += 14;
             ID = productCount;
             Name = NameInp;
             Price = priceInp;
