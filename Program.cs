@@ -6,7 +6,6 @@ using CRUD;
 
 static class Program
 {
-    
     static void Main(string[] args)
     {
         Application.Init();
