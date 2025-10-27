@@ -11,7 +11,6 @@ static class Program
         Application.Init();
 
         List<Product> products = new List<Product>();
-        List<Window> productWindows = new List<Window>();
 
         UI ui = new UI(products);
 
